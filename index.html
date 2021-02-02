@@ -10,6 +10,25 @@
 </head>
 <body>
   <div class="wrapper">
+    <div class="filter">
+      <div class="filter__itemsPerPage">
+        <span>Show</span>
+        <select name='itemsPerPage' id='itemsPerPage-select' autocomplete="off">
+          <option value='3'>3</option>
+          <option value='6'>6</option>
+          <option value='9'>9</option>
+        </select>
+      </div>
+      <div class="filter__sortBy">
+        <span>Sort By</span>
+        <select name='sort' id='sort-select' autocomplete="off">
+          <option value='abv'>Alcohol</option>
+          <option value='ibu'>Bitterness</option>
+          <!-- <option value='name'>Name</option> -->
+        </select>
+      </div>
+    </div>
+   
     <div class="beers-container">
       <!-- beers content will be auto injected here -->
     </div>
