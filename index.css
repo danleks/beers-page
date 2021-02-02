@@ -47,7 +47,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-rows: 1fr auto auto 1fr min-content;
   width: 300px;
   height: 550px;
   padding: 35px 0;
@@ -97,6 +97,12 @@ body {
   font-weight: bold;
 }
 
+.card__ibu {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -114,9 +120,4 @@ body {
   font-size: 12px;
   background-color: var(--white);
   cursor: pointer;
-}
-
-.active {
-  background-color: var(--darkGrey);
-  color: var(--white);
 }
