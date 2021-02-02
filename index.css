@@ -24,9 +24,16 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: min-content 1fr auto;
   gap: 100px;
   padding: 200px 0 100px;
+}
+
+.filter {
+  justify-self: flex-end;
+  display: flex;
+  gap: 33px;
+  width: 245px;
 }
 
 .beers-container {
@@ -107,4 +114,9 @@ body {
   font-size: 12px;
   background-color: var(--white);
   cursor: pointer;
+}
+
+.active {
+  background-color: var(--darkGrey);
+  color: var(--white);
 }
