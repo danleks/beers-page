@@ -13,7 +13,7 @@ const render = (beers) => {
         container.innerHTML = '';
     }
     const fragment = document.createDocumentFragment();
-    beers.forEach(({ abv, image_url: imageURL, name, tagline, description }) => {
+    beers.forEach(({ abv, image_url: imageURL, name, tagline, description, ibu }) => {
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML = `
@@ -22,6 +22,7 @@ const render = (beers) => {
             <h1 class="card__title">${ name }</h1>
             <h2 class="card__subtitle">${ tagline }</h2>
             <p class="card__description">${ description.slice(0, 300) }</p>
+            <span class="card__ibu">Bitterness: ${ibu}</span>
         `;
         fragment.appendChild(div);
     })
